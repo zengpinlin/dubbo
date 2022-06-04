@@ -33,6 +33,7 @@ public class SimpleDataStore implements DataStore {
     @Override
     public Map<String, Object> get(String componentName) {
         ConcurrentMap<String, Object> value = data.get(componentName);
+        // 测试github加速
         if (value == null) return new HashMap<String, Object>();
 
         return new HashMap<String, Object>(value);
